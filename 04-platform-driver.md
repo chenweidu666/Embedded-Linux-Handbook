@@ -172,5 +172,14 @@ static struct file_operations npu_fops = {
 
 ---
 
+
+---
+
+## 📝 本章总结
+
+本章讲解了 Linux Platform 驱动模型、设备注册、驱动 probe/remove 流程和资源管理。
+
+---
+
 **最后更新**: 2026-04-21  
 **维护者**: 苏亚雷斯 (Suarez)

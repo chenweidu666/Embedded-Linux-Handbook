@@ -115,5 +115,14 @@ hello: ELF 64-bit LSB executable, ARM aarch64
 
 ---
 
+
+---
+
+## 📝 本章总结
+
+本章介绍了交叉编译工具链的配置、目标架构选择（arm/aarch64）、sysroot 使用和常见编译问题排查。
+
+---
+
 **最后更新**: 2026-04-21  
 **维护者**: 苏亚雷斯 (Suarez)

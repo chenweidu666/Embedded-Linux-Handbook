@@ -113,5 +113,14 @@ Kernel 加载完驱动后，启动第一个用户态进程 (PID 1)，通常是 `
 
 ---
 
+
+---
+
+## 📝 本章总结
+
+本章讲解了嵌入式 Linux 启动流程：Bootloader → Kernel → Initramfs → Rootfs → User Space。
+
+---
+
 **最后更新**: 2026-04-21  
 **维护者**: 苏亚雷斯 (Suarez)
