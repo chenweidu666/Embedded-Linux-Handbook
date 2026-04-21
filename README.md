@@ -14,6 +14,7 @@
 | **Chapter 2** | 02-boot-sequence.md | 启动流程、U-Boot 命令、Kernel 引导参数、Init 进程 | 3-4 hours |
 | **Chapter 3** | 03-device-tree.md | DTS 语法、Compatible 匹配、NPU 节点写法、中断与时钟 | 3-4 hours |
 | **Chapter 4** | 04-platform-driver.md | 驱动框架、Probe 机制、IO Remap、注册字符设备 (cdev) | 3-4 hours |
+| **FAQ** | faq.md | VMware 环境配置与交互常见问题 | - |
 
 **总计**: 4 章，11-15 小时完成（纯 Linux 嵌入式硬核内容）
 
