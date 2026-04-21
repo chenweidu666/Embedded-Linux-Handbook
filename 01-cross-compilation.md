@@ -2,7 +2,10 @@
 
 <link rel="stylesheet" href="../npu/assets/print-b5.css">
 
-**理解为什么嵌入式开发不能在板子上写代码，以及如何搭建 Host 到 Target 的编译环境。**
+## 📝 本章总结
+
+本章介绍了交叉编译工具链的配置、目标架构选择（arm/aarch64）、sysroot 使用和常见编译问题排查。
+
 
 ---
 
@@ -112,15 +115,6 @@ hello: ELF 64-bit LSB executable, ARM aarch64
 ### 5.3 运行时报错：No such file or directory (但文件明明存在！)
 - **原因**：这是最经典的坑。**ELF 解释器缺失**。编译时指定的动态链接器 (如 `/lib/ld-linux-aarch64.so.1`) 在板子上不存在，或者版本不匹配。
 - **解决**：确保板子上的 `/lib` 目录下有对应架构的 `ld-linux`，或者静态编译 (`-static`)。
-
----
-
-
----
-
-## 📝 本章总结
-
-本章介绍了交叉编译工具链的配置、目标架构选择（arm/aarch64）、sysroot 使用和常见编译问题排查。
 
 ---
 

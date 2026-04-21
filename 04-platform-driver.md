@@ -2,7 +2,10 @@
 
 <link rel="stylesheet" href="../npu/assets/print-b5.css">
 
-**深入理解 Linux Kernel 如何管理板载外设。掌握 Probe 机制、资源申请与字符设备注册。**
+## 📝 本章总结
+
+本章讲解了 Linux Platform 驱动模型、设备注册、驱动 probe/remove 流程和资源管理。
+
 
 ---
 
@@ -169,15 +172,6 @@ static struct file_operations npu_fops = {
 4. **硬件操作**：使用 `readl/writel` 验证能否读写寄存器。
 5. **实现 IO 逻辑**：编写 `ioctl`，实现下发任务、查询状态等功能。
 6. **应用层测试**：写一个简单的 C 程序打开 `/dev/npu`，发指令看硬件反应。
-
----
-
-
----
-
-## 📝 本章总结
-
-本章讲解了 Linux Platform 驱动模型、设备注册、驱动 probe/remove 流程和资源管理。
 
 ---
 

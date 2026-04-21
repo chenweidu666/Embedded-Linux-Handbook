@@ -2,7 +2,10 @@
 
 <link rel="stylesheet" href="../npu/assets/print-b5.css">
 
-**理解板子从上电到 Shell 提示符出现，中间经历了什么。掌握 U-Boot 与 Kernel 的交互。**
+## 📝 本章总结
+
+本章讲解了嵌入式 Linux 启动流程：Bootloader → Kernel → Initramfs → Rootfs → User Space。
+
 
 ---
 
@@ -110,15 +113,6 @@ Kernel 加载完驱动后，启动第一个用户态进程 (PID 1)，通常是 `
 ### 5.2 启动完成
 当 Init 脚本执行完毕，Shell 出现，你就可以登录板子，输入命令了。
 此时，NPU 驱动通常已经加载到 `/dev/npu` 节点，等待用户态程序调用。
-
----
-
-
----
-
-## 📝 本章总结
-
-本章讲解了嵌入式 Linux 启动流程：Bootloader → Kernel → Initramfs → Rootfs → User Space。
 
 ---
 

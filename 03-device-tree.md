@@ -2,7 +2,10 @@
 
 <link rel="stylesheet" href="../npu/assets/print-b5.css">
 
-**理解 ARM Linux 如何描述硬件。掌握 DTS 语法、节点结构以及 NPU 设备节点的写法。**
+## 📝 本章总结
+
+本章介绍了设备树（DTS/DTB）语法、节点和属性定义、GPIO/时钟/中断配置和常见 DTS 修改方法。
+
 
 ---
 
@@ -107,15 +110,6 @@ npu: npu@ff9a0000 {
 | **地址写错** | 访问硬件时触发 Data Abort (内核崩溃) | 仔细核对 Datasheet，确保地址和长度正确 |
 | **电源域未配置** | 读寄存器全是 `0xFF` 或 `0x00` | 检查 Power Domain 是否已开启 |
 | **Compatible 不匹配** | 驱动加载了，但 Probe 没跑 | 检查 DTS 和 代码里的 `compatible` 字符串是否一字不差 |
-
----
-
-
----
-
-## 📝 本章总结
-
-本章介绍了设备树（DTS/DTB）语法、节点和属性定义、GPIO/时钟/中断配置和常见 DTS 修改方法。
 
 ---
 
